@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Mom ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+    margin:0;
+    padding:20px;
+}
+
+        body{
+    margin: 0;
+    padding: 0;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: deeppink;
+    color: white;
+    cursor: pointer;
+}
+
+        audio{
+            margin-top:20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="image.png" alt="PHOTO">
+
+    <h1>I Love You Mom ❤️</h1>
+
+    <audio id="bgmusic" loop hidden>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+window.onload = function () {
+    document.getElementById("bgmusic").play();
+}
+
+</script>
+    <button onclick="window.location.href='lastpage.html'">next❤️</button>
+    <script>
+        function nextPage(){
+    window.location.href = "lastpage.html";}
+    </script>
+   
+</body>
+</html>

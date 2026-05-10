@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HAPPY MOTHER'S DAY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+    margin:0;
+    padding:20px;
+}
+        body{
+            margin: 0;
+            overflow: hidden;
+             background: linear-gradient(#ffb6c1);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100px;
+             flex-direction: column;
+        }
+     #mom{
+   
+    color:black;
+    text-align: center;
+    font-size: 50px;
+    animation: glows 2s infinite alternate;
+    text-shadow: 0 0 20px rgba(255, 255,255, .8);
+    z-index: 10;
+    margin-top: 100px;
+    
+}
+.heart{
+    position:absolute;
+
+    color:white;
+
+    font-size:25px;
+
+    animation:float 6s linear infinite;
+
+    opacity:0.8;
+    pointer-events: none;
+}
+
+/* FLOATING ANIMATION */
+
+@keyframes float{
+
+0%{
+    transform:translateY(100vh) scale(0);
+    opacity:0;
+}
+
+50%{
+    opacity:1;
+}
+
+100%{
+    transform:translateY(-10vh) scale(1.5);
+    opacity:0;
+}
+
+}
+
+   
+
+
+
+#page1{
+    display:flex;
+}
+
+/* PAGE 2 HIDDEN */
+
+#page2{
+    display:none;
+}
+
+/* PHOTO */
+
+
+button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    padding:25px 20px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:white;
+
+    color:#ff69b4;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    margin-top:20px;
+    width: 30px;
+    height: 20px;
+    z-index: 9999;
+    
+    justify-content: center;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+
+}
+button:hover{
+    background: darkred;
+}
+</style>
+
+</head>
+<body>
+    <div id="page1">
+    <h1 id="mom">happy mother day</h1>
+     <button onclick="nextPage()">next❤️
+
+</button>
+
+    </div>
+    <script>
+        
+
+/* CREATE HEARTS */
+
+for(let i=0; i<30; i++){
+
+    let heart=document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML="❤️";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.animationDuration=
+    (Math.random()*3+3)+"s";
+
+    heart.style.fontSize=
+    (Math.random()*20+20)+"px";
+
+    document.body.appendChild(heart);
+}
+
+</script>
+ 
+
+</script>
+<script>
+function nextPage(){
+    window.location.href = "second.html";
+}
+</script>
+
+
+</div>
+</body>
+</html>
